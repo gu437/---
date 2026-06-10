@@ -1,3 +1,4 @@
 allowBuilds:
   '@parcel/watcher': true
+  '@tsparticles/engine': true
   esbuild: true
