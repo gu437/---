@@ -3,7 +3,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/---/",
 
   lang: "zh-CN",
   title: "我的博客",
