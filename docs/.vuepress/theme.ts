@@ -9,7 +9,8 @@ export default hopeTheme({
     url: "https://github.com/gu437",
   },
 
-  logo: "/logo.svg",
+  logo: "/avatar.png",
+  favicon: "/favicon.ico",
 
   repo: "gu437/---",
 
@@ -33,7 +34,7 @@ export default hopeTheme({
     name: "Gu437",
     description: "安全研究 · 技术探索 · 学习记录",
     intro: "/intro.html",
-    avatar: "/logo.svg",
+    avatar: "/avatar.png",
     medias: {
       GitHub: "https://github.com/gu437",
     },

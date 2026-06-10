@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: 首页
-heroImage: /logo.svg
+heroImage: /avatar.png
 heroText: Gu437's Blog
 tagline: 安全研究 · 技术探索 · 学习记录
 heroFullScreen: true
