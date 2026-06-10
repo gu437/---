@@ -7,6 +7,7 @@ heroImage: /avatar.png
 heroText: Gu437's Blog
 tagline: 安全研究 · 技术探索 · 学习记录
 heroFullScreen: true
+bgImage: false
 heroImageStyle:
   border-radius: 50%
   width: 180px
