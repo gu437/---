@@ -1,40 +1,122 @@
 // 自定义主题变量
 // https://theme-hope.vuejs.press/zh/guide/style/config.html
 
-// 自定义样式
+// ========== 头像光环动画 ==========
+@keyframes avatar-glow {
+  0% {
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.3), 0 0 60px rgba(30, 144, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(30, 144, 255, 0.5), 0 0 80px rgba(30, 144, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.3), 0 0 60px rgba(30, 144, 255, 0.1);
+  }
+}
+
+// ========== 首页头像样式 ==========
 .home-blog-wrapper {
   .hero-info {
+    .vp-blog-avatar {
+      animation: avatar-glow 3s ease-in-out infinite;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.08) rotate(2deg);
+        border-color: rgba(30, 144, 255, 0.8) !important;
+        box-shadow: 0 0 40px rgba(30, 144, 255, 0.6),
+                    0 0 100px rgba(30, 144, 255, 0.3) !important;
+      }
+    }
+
     .hero-info-name {
       font-size: 2.5rem;
+    }
+
+    .hero-info-tagline {
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
     }
   }
 }
 
-// 博客文章卡片样式
-.blog-article-wrapper {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-2px);
+// ========== 侧边栏头像样式 ==========
+.vp-blog-avatar-wrapper {
+  .vp-blog-avatar {
+    border-radius: 50% !important;
+    border: 3px solid rgba(30, 144, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 25px rgba(30, 144, 255, 0.4);
+    }
   }
 }
 
-// 代码块样式增强
+// ========== 博客文章卡片样式 ==========
+.blog-article-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// ========== 项目卡片样式 ==========
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(30, 144, 255, 0.15);
+    border-color: rgba(30, 144, 255, 0.3);
+  }
+}
+
+// ========== 代码块样式增强 ==========
 div[class*="language-"] {
   border-radius: 8px;
 }
 
-// 导航栏样式
+// ========== 导航栏样式 ==========
 .navbar {
   .site-name {
     font-weight: bold;
   }
 }
 
-// 页脚样式
+// ========== 页脚样式 ==========
 .page-footer {
   text-align: center;
   padding: 1.5rem 0;
   opacity: 0.8;
   font-size: 0.875rem;
+}
+
+// ========== 暗模式适配 ==========
+html.dark {
+  .home-blog-wrapper {
+    .hero-info {
+      .vp-blog-avatar {
+        animation: avatar-glow 3s ease-in-out infinite;
+      }
+    }
+  }
+
+  @keyframes avatar-glow {
+    0% {
+      box-shadow: 0 0 20px rgba(30, 144, 255, 0.4), 0 0 60px rgba(30, 144, 255, 0.15);
+    }
+    50% {
+      box-shadow: 0 0 35px rgba(30, 144, 255, 0.6), 0 0 90px rgba(30, 144, 255, 0.25);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(30, 144, 255, 0.4), 0 0 60px rgba(30, 144, 255, 0.15);
+    }
+  }
 }

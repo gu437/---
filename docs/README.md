@@ -7,7 +7,14 @@ heroImage: /avatar.png
 heroText: Gu437's Blog
 tagline: 安全研究 · 技术探索 · 学习记录
 heroFullScreen: true
-bgImage: false
+heroImageStyle:
+  border-radius: 50%
+  width: 180px
+  height: 180px
+  object-fit: cover
+  border: 4px solid rgba(30, 144, 255, 0.4)
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.3), 0 0 60px rgba(30, 144, 255, 0.1)
+  transition: all 0.4s ease
 projects:
   - icon: shield-halved
     name: 安全研究
@@ -26,6 +33,8 @@ projects:
     desc: 我的开源项目和代码仓库
     link: https://github.com/gu437
 ---
+
+<MountainBg />
 
 ## 🚀 关于本站
 
