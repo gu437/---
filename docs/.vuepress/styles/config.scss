@@ -1,6 +1,20 @@
 // 自定义主题变量
 // https://theme-hope.vuejs.press/zh/guide/style/config.html
 
+// ========== 山水背景：让页面背景透明 ==========
+html,
+body,
+.vp-page,
+.vp-blog,
+.home-blog-wrapper,
+.vp-blog-home {
+  background: transparent !important;
+}
+
+.vp-blog-mask {
+  display: none !important;
+}
+
 // ========== 头像光环动画 ==========
 @keyframes avatar-glow {
   0% {
