@@ -1,2 +1,40 @@
-// 在此处自定义样式
+// 自定义主题变量
 // https://theme-hope.vuejs.press/zh/guide/style/config.html
+
+// 自定义样式
+.home-blog-wrapper {
+  .hero-info {
+    .hero-info-name {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// 博客文章卡片样式
+.blog-article-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// 代码块样式增强
+div[class*="language-"] {
+  border-radius: 8px;
+}
+
+// 导航栏样式
+.navbar {
+  .site-name {
+    font-weight: bold;
+  }
+}
+
+// 页脚样式
+.page-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  opacity: 0.8;
+  font-size: 0.875rem;
+}

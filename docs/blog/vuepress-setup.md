@@ -6,8 +6,7 @@ tags:
   - VuePress
   - 博客搭建
   - 前端
-description: 使用 VuePress 和 vuepress-theme-hope 搭建个人博客的完整过程记录。
-cover: /assets/image/cover.jpg
+excerpt: 使用 VuePress 和 vuepress-theme-hope 搭建个人博客的完整过程记录。
 ---
 
 # 博客搭建记录

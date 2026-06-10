@@ -7,9 +7,10 @@ const navbar: navbarConfig = [
     text: "分类",
     icon: "folder-open",
     children: [
-      { text: "技术", icon: "code", link: "/blog/category/tech/" },
-      { text: "笔记", icon: "pencil", link: "/blog/category/notes/" },
-      { text: "生活", icon: "heart", link: "/blog/category/life/" },
+      { text: "安全研究", icon: "shield-halved", link: "/blog/category/security/" },
+      { text: "技术笔记", icon: "code", link: "/blog/category/tech/" },
+      { text: "学习记录", icon: "book-open", link: "/blog/category/notes/" },
+      { text: "CTF", icon: "flag", link: "/blog/category/ctf/" },
     ],
   },
   { text: "时间线", icon: "clock", link: "/blog/timeline/" },

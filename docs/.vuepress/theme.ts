@@ -2,18 +2,16 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 
 export default hopeTheme({
-  hostname: "https://your-username.github.io",
+  hostname: "https://gu437.github.io",
 
   author: {
-    name: "你的名字",
-    url: "https://your-username.github.io",
+    name: "Gu437",
+    url: "https://github.com/gu437",
   },
-
-  iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.svg",
 
-  repo: "your-username/my-blog",
+  repo: "gu437/---",
 
   docsDir: "docs",
 
@@ -24,26 +22,43 @@ export default hopeTheme({
   sidebar: "structure",
 
   // 页脚
-  footer: "默认页脚",
+  footer: "Made with VuePress & vuepress-theme-hope",
   displayFooter: true,
+
+  // 版权信息
+  copyright: "Copyright © 2026 Gu437",
 
   // 博客配置
   blog: {
-    description: "一个技术博主",
+    name: "Gu437",
+    description: "安全研究 · 技术探索 · 学习记录",
     intro: "/intro.html",
+    avatar: "/logo.svg",
     medias: {
-      GitHub: "https://github.com/your-username",
-      // Email: "mailto:your-email@example.com",
-      // Rss: "/rss.xml",
+      GitHub: "https://github.com/gu437",
     },
     timeline: "时间线",
+    articlePerPage: 10,
+    blogPerPage: 10,
+  },
+
+  // 页面元信息
+  meta: {
+    createdAt: true,
+    updatedAt: true,
+    author: true,
+    editLink: false,
+    contributors: false,
+  },
+
+  // 目录配置
+  toc: {
+    levels: [2, 3],
   },
 
   // 加密配置
   encrypt: {
-    config: {
-      // "/demo/encrypt.html": ["1234"],
-    },
+    config: {},
   },
 
   // 多语言
@@ -51,21 +66,22 @@ export default hopeTheme({
     "/": {
       navbar,
       sidebar: "structure",
-
-      footer: "默认页脚",
+      footer: "Made with VuePress & vuepress-theme-hope",
       displayFooter: true,
-
       blog: {
-        description: "一个技术博主",
+        name: "Gu437",
+        description: "安全研究 · 技术探索 · 学习记录",
         intro: "/intro.html",
       },
     },
   },
 
-  // 博客插件已内置，无需额外配置
-
-  // 搜索插件（使用 slimsearch，比默认搜索更强）
+  // 插件配置
   plugins: {
+    icon: {
+      assets: "fontawesome-with-brands",
+    },
+
     slimsearch: true,
 
     blog: {
@@ -78,8 +94,8 @@ export default hopeTheme({
     //   serverURL: "https://your-waline-server.vercel.app",
     // },
 
-    // SEO 已内置，无需额外配置
-    // Feed 已内置，可选配置
+    // SEO 已内置
+    // Feed 已内置
     // feed: {
     //   rss: true,
     // },

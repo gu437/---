@@ -1,29 +1,41 @@
 ---
 home: true
-layout: BlogHome
+layout: Blog
 icon: home
-title: 博客主页
+title: 首页
 heroImage: /logo.svg
-heroText: 我的博客
-tagline: 记录技术、分享生活
+heroText: Gu437's Blog
+tagline: 安全研究 · 技术探索 · 学习记录
 heroFullScreen: true
+bgImage: false
 projects:
-  - icon: link
-    name: 开源项目
-    desc: 我的开源项目
-    link: https://github.com/your-username
-  - icon: book
-    name: 学习笔记
-    desc: 技术学习过程中的一些记录
-    link: /blog/category/notes/
-  - icon: pen-to-square
-    name: 技术文章
-    desc: 编程、安全、运维相关技术分享
+  - icon: shield-halved
+    name: 安全研究
+    desc: 渗透测试、漏洞挖掘、CTF 解题记录
+    link: /blog/category/security/
+  - icon: code
+    name: 技术笔记
+    desc: 编程开发、工具使用、环境搭建
     link: /blog/category/tech/
+  - icon: book-open
+    name: 学习记录
+    desc: 日常学习过程中的思考与总结
+    link: /blog/category/notes/
+  - icon: github
+    name: GitHub
+    desc: 我的开源项目和代码仓库
+    link: https://github.com/gu437
 ---
 
-## 关于博客
+## 🚀 关于本站
 
-这是一个基于 **VuePress** 和 **vuepress-theme-hope** 主题搭建的个人博客。
+欢迎来到我的个人博客！这里是我在安全研究和技术探索过程中的记录空间。
 
-欢迎来到我的数字空间！这里记录着我的技术探索、学习笔记和生活感悟。
+**主要内容包括：**
+
+- 🛡️ **安全研究** — 渗透测试实战、漏洞分析、安全工具使用
+- 💻 **技术笔记** — 编程开发、运维部署、工具链配置
+- 📝 **学习记录** — 日常学习的思考与总结
+- 🏁 **CTF Writeup** — CTF 竞赛题目解题思路
+
+**技术栈：** [VuePress 2](https://vuepress.vuejs.org/) + [vuepress-theme-hope](https://theme-hope.vuejs.press/) + GitHub Pages
