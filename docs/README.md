@@ -34,8 +34,6 @@ projects:
     link: https://github.com/gu437
 ---
 
-<MountainBg />
-
 ## 🚀 关于本站
 
 欢迎来到我的个人博客！这里是我在安全研究和技术探索过程中的记录空间。
