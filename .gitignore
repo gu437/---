@@ -4,3 +4,6 @@ docs/.vuepress/.temp/
 docs/.vuepress/dist/
 .DS_Store
 *.log
+
+docs/.vuepress/dist/
+Token

@@ -1,18 +1,10 @@
 // 自定义主题变量
 // https://theme-hope.vuejs.press/zh/guide/style/config.html
 
-// ========== 山水背景：让页面背景透明 ==========
-html,
-body,
-.vp-page,
-.vp-blog,
-.home-blog-wrapper,
-.vp-blog-home {
-  background: transparent !important;
-}
-
-.vp-blog-mask {
-  display: none !important;
+// ========== 首页 hero 区域：深色背景 + 粒子效果 ==========
+.home-blog-wrapper {
+  background: linear-gradient(135deg, #0a1628 0%, #0d2137 40%, #0f2b4a 100%) !important;
+  padding-bottom: 2rem;
 }
 
 // ========== 头像光环动画 ==========
@@ -45,11 +37,13 @@ body,
 
     .hero-info-name {
       font-size: 2.5rem;
+      color: #e2e8f0 !important;
     }
 
     .hero-info-tagline {
       font-size: 1.1rem;
       letter-spacing: 0.15em;
+      color: #94a3b8 !important;
     }
   }
 }
@@ -115,6 +109,8 @@ div[class*="language-"] {
 // ========== 暗模式适配 ==========
 html.dark {
   .home-blog-wrapper {
+    background: linear-gradient(135deg, #060d19 0%, #0a1628 40%, #0d1f3c 100%) !important;
+
     .hero-info {
       .vp-blog-avatar {
         animation: avatar-glow 3s ease-in-out infinite;
